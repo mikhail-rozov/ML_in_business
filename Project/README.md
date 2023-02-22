@@ -3,6 +3,10 @@
 Задача: по возрасту, полу и классу каюты пассажира предсказать, выживет ли он на Титанике.  
 Модель: RandomForest.  
   
+Код обучения модели - [link](app/models/model.ipynb)  
+Код запуска сервера - [link](app/run_server.py)  
+Код клиентской части - [link](app/client.py)
+  
 ### Создание образа:  
 ```
 docker build -t titanic_model .
@@ -11,4 +15,8 @@ docker build -t titanic_model .
 ```
 docker run -it -p 8080:8080 titanic_model
 ```
-Далее нужно ввести в консоли запрашиваемые признаки пассажира и получить предсказание.
+Далее нужно ввести в консоли запрашиваемые признаки пассажира и получить предсказание.  
+  
+<ins>Скриншот работы:</ins>  
+<br>
+<img src="https://user-images.githubusercontent.com/77928025/220632368-5ad7cfa6-05ab-4df7-a903-04b815896936.png" width="700" />  
